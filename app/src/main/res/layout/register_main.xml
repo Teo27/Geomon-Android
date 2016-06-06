@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.teo.myapplication.Register"
+    android:background="@drawable/background_repeat">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/toucarna"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextRepeatPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:onClick="loginClick"
+        android:background="@drawable/btn_back_big"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buttonRegister" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegister"
+        android:onClick="registerClick"
+        android:background="@drawable/register"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewScreenName"
+        android:background="@drawable/screenname"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/buttonLogin" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:ems="10"
+        android:id="@+id/editTextScreenName"
+        android:background="@drawable/text_input_fields_shape"
+        android:layout_below="@+id/textViewScreenName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewUsername"
+        android:background="@drawable/username"
+        android:layout_below="@+id/editTextScreenName"
+        android:layout_alignStart="@+id/buttonLogin" />
+
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:ems="10"
+        android:id="@+id/editTextUsername"
+        android:layout_below="@+id/textViewUsername"
+        android:layout_alignStart="@+id/editTextScreenName"
+        android:background="@drawable/text_input_fields_shape"
+    />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:background="@drawable/text_input_fields_shape"
+        android:layout_below="@+id/textViewEmail"
+        android:layout_alignStart="@+id/editTextUsername" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextRepeatPassword"
+        android:background="@drawable/text_input_fields_shape"
+        android:layout_below="@+id/textViewRepeatPassword"
+        android:layout_alignStart="@+id/editTextEmail" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:background="@drawable/text_input_fields_shape"
+        android:layout_below="@+id/textViewPassword"
+        android:layout_alignStart="@+id/editTextRepeatPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewEmail"
+        android:background="@drawable/email"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewPassword"
+        android:background="@drawable/password"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignStart="@+id/textViewEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewRepeatPassword"
+        android:background="@drawable/reppassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignStart="@+id/textViewPassword" />
+
+
+
+
+</RelativeLayout>
